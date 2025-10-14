@@ -1,0 +1,21 @@
+count=1
+while [ $count -le 3 ]; do
+    read -p "Yaşınızı girin: " yas
+    if [ $yas -ge 18 ]; then
+        echo "Reşitsiniz"
+    else
+        echo "Reşit değilsiniz"
+    fi
+    count=$((count + 1))
+done
+# 1. Yaş kontrolü while loop
+
+# 2. İsim uzunluğu for loop
+for i in {1..5}; do
+    read -p "İsminizi girin: " isim
+    if [ ${#isim} -ge 5 ]; then
+        echo "İsminiz uzun"
+    else
+        echo "İsminiz kısa"
+    fi
+done
