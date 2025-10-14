@@ -9,7 +9,7 @@ while [ $count -le 3 ]; do
     count=$((count + 1))
 done
 # 1. Yaş kontrolü while loop
-
+-----------------------------------------
 # 2. İsim uzunluğu for loop
 for i in {1..5}; do
     read -p "İsminizi girin: " isim
