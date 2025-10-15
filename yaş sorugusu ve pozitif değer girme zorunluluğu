@@ -1,0 +1,8 @@
+while true; do
+    read -p "Yaşınızı Girin: " yas
+    if [[ "$yas" =~ ^[0-9]+$ ]]; then
+        break
+    else
+        echo -e "${RED}Lütfen geçerli bir pozitif sayı girin${NC}"
+    fi
+done
