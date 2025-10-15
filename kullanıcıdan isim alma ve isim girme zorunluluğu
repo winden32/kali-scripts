@@ -1,0 +1,12 @@
+┌──(winden㉿DESKTOP-7OLKM30)-[~]
+└─$ while true; do
+>     read -p "İsminizi Girin: " isim
+>     if [[ -n "$isim" && "$isim" != " " ]]; then
+>         break
+>     else
+>         echo -e "${RED}İsim Boş Olamaz${NC}"
+>     fi
+> done
+İsminizi Girin:
+İsim Boş Olamaz
+İsminizi Girin: sdaw
